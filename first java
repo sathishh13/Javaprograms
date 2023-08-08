@@ -12,3 +12,112 @@ public class Main{
        
    }
 }
+
+
+2) Take name as input and print a greeting message for that particular name.
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your name :");
+        String name=sc.next();
+        System.out.println("Hello " + name + ", Welcome to Github!");
+    }
+}
+
+3)Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter principal amount : ");
+        double p = sc.nextDouble();
+        System.out.print("Enter rate : ");
+        double r = sc.nextDouble();
+        System.out.print("Enter time : ");
+        double t = sc.nextDouble();
+        double si=(p*t*r)/100.0;
+        System.out.println(" Simple interst is : " + si);
+    }
+}
+
+4) Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b= sc.nextInt();
+        int result=0;
+        char op=sc.next().charAt(0);
+        if(op=='+'){
+            result=a+b;
+        }
+        else if(op=='-'){
+            result=a-b;
+        }
+        else if(op=='*'){
+            result=a*b;
+        }else if(op=='/'){
+            if(b!=0){
+                result=a/b;
+            }
+            else{
+                System.out.println("cant be divide by 0");
+                System.exit(1);
+            }
+        }
+        else{
+            System.out.println("Invalid operator");
+        }
+        System.out.println(result);
+    }
+}
+
+
+5)Take 2 numbers as input and print the largest number.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b= sc.nextInt();
+        int large= a>b?a:b ;
+        System.out.println(large + " is large number");
+    }
+}
+
+
+6)Input currency in rupees and output in USD.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Indian rupees :");
+        double a=sc.nextDouble();
+        double usd = a*0.012;
+        System.out.printf("Value of Indian rupees in USD is : %.2f " ,usd);
+        
+        
+    }
+}
+
+7)To calculate Fibonacci Series up to n numbers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

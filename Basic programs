@@ -17,3 +17,58 @@ public class Main
 		}
 	}
 }
+
+2) sum of two numbers
+import java.util.*;
+public class Main
+{
+	static int sum(int a,int b){
+	    int sum = a+b;
+	    return sum;
+	}
+        public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a =sc.nextInt();
+		int b= sc.nextInt();
+		System.out.println(sum(a,b));
+	}
+}
+
+3) Take a number as input and print the multiplication table for it.
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        int limit=sc.nextInt();
+        for(int i=1;i<=limit;i++){
+            int result=number*i;
+            System.out.println(number+"x"+i+"="+result);
+        }
+    }
+}
+
+4)  Take 2 numbers as inputs and find their HCF and LCM.
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+      Scanner sc= new Scanner(System.in);
+      int a=sc.nextInt();
+      int b=sc.nextInt();
+      System.out.println(hcf(a,b));
+      System.out.println(lcm(a,b));
+    }
+    static int hcf(int a,int b){
+        while(b!=0){
+            int temp =b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
+    }
+    static int lcm(int a,int b){
+        return a*b/hcf(a,b);
+    }
+}
+
